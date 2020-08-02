@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+	
+	<title>Module 3 (RESTAURENT)</title>
+	<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+    <header class="nav-header">
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <p class="nav-brand">HELLO FOODIES</p>
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="true">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
+            <li class="text-center">
+              <a href="#hilsha-div"><p class="item">Veg Dishes</p></a>
+              <hr class="visible-xs">
+            </li>            
+            <li class="text-center biryani-item">
+              <a href="#biryani-div"><p class="item">Biryani</p></a>
+              <hr class="visible-xs">
+            </li>
+            <li class="text-center chingri-item">
+              <a href="#chingri-div"><p class="item">Non Veg Meals</p></a>
+            </li>
+          </ul> 
+        </div>
+      </div>
+    </nav>
+  	</header>
+<div class="row">
+	<div class="column" style="background-color:#C24641;">
+		<center><img src="veg.jpg" alt="veg" height="250" width="100%"></center>
+	</div>
+	<div class="column" style="background-color:#C24641;">
+		<center><img src="biriyani.jpg" alt="veg" height="250" width="100%"></center>
+	</div>
+	<div class="column" style="background-color:#C24641;">
+		<center><img src="non.jpg" alt="veg" height="250" width="100%" ></center>
+	</div>
+</div>
+	<h1 class="text-center">Our Menu</h1>
+
+	<div class="row container container-fluid">
+	<div class="col-md-12 col-sm-12 col-xs-12" id="hilsha-div">
+		<section>
+		<div id="hilsha">
+			Veg Meals
+		</div>
+		<p>
+			<!--<center><img src="veg.jpg" alt="veg" width="500" height="300"></center>-->
+			<div class="row">
+  <div class="column" style="background-color:#C24641; border-style: dashed;">
+    <h2>Combo 1</h2>
+    <p><ul>
+				<li>Vendhaya Kuzhambu</li>
+				<li>Beans Parupu Usili</li>
+				<li>Carrot Coconut Salad</li>
+				<li>Rice</li>
+			</ul></p>
+  </div>
+  <div class="column" style="background-color:#C24641; border-style: dashed;">
+    <h2>Combo 2</h2>
+    <p><ul>
+				<li>Tamarind Rice</li>
+				<li>Banana Raita</li>
+				<li>Pomegranate Rasam</li>
+				<li>Rice</li>
+			</ul></p>
+  </div>
+  <div class="column" style="background-color:#C24641; border-style: dashed;">
+    <h2>Combo 3</h2>
+    <p><ul>
+				<li>Keerai Kootaan</li>
+				<li>Cabbage curry</li>
+				<li>Ginger Rasam</li>
+				<li>Rice</li>
+			</ul></p>
+  </div>
+</div>
+		</p>
+		</section>
+	</div>
+	<div class="col-md-12 col-sm-12 col-xs-12" id="biryani-div">
+		<section>
+		<div id="biryani">
+			Biriyani
+		</div>
+		<p>
+			<ul>
+				<li>Veg Biriyani</li>
+				<li>Chicken Biriyani</li>
+				<li>Mutton Biriyani</li>
+				<li>Fish Biriyani</li>
+			</ul>
+		</p>
+		</section>
+	</div>
+	<div class="col-md-12 col-sm-12 col-xs-12" id="chingri-div">
+		<section>
+		<div id="chingri">
+			Non Veg Meals
+		</div>
+		<p>
+			<ul>
+				<li>Rice + Chicken Curry</li>
+				<li>Rice + Mutton Curry</li>
+				<li>Rice + Fish Curry</li>
+			</ul>
+
+		</p>
+		</section>
+	</div>
+	</div>
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+  	<script src="js/script.js"></script>
+</body>
+</html>
